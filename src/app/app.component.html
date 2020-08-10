@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <img src="/assets/logo.png" alt="Logo" class="mr-2" height="46px" width="auto">
+  <span>Pelican Landing</span>
+  <span class="mx-auto"></span>
+  <span>
+    <button mat-button [matMenuTriggerFor]="huntingMenu">Hunting</button>
+    <mat-menu #huntingMenu="matMenu">
+      <button mat-menu-item>Whitetail Dear</button>
+      <button mat-menu-item>Black Bear</button>
+      <button mat-menu-item>Birds & Small Game</button>
+    </mat-menu>
+    <button mat-button>Fishing</button>
+    <button mat-button>Lodging</button>
+  </span>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<footer class="w-100 bg-dark py-3 text-white">
+  <div class="container">
+    <div class="row">
+      <span class="mx-auto">Copyright © Morson's Pelican Landing 2020 | All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
