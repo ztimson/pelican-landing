@@ -1,0 +1,14 @@
+.app-footer {
+	ul {
+		list-style: none !important;
+		padding: 0 !important;
+
+		li {
+			color: #fff9;
+
+			&:hover {
+				color: #fff9;
+			}
+		}
+	}
+}

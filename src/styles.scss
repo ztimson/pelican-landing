@@ -1,7 +1,45 @@
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:300,400,500);
+// Theme ================================================================
+@use '@angular/material' as mat;
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons");
 
-@import './ bootstrap';
-@import './material';
+@include mat.core();
+$my-theme: mat.define-light-theme((
+	color: (
+		primary: mat.define-palette(mat.$blue-palette),
+		accent: mat.define-palette(mat.$pink-palette, A200),
+	),
+	typography: mat.define-typography-config(),
+	density: 0,
+));
+@include mat.all-component-themes($my-theme);
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// Globals ==============================================================
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cap-width {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+.curs-pointer {
+	cursor: pointer;
+}
+
+.logo {
+	color: #000000;
+
+	&:hover {
+		color: #555555;
+		text-decoration: none;
+	}
+}
+
