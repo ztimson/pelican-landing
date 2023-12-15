@@ -4,21 +4,14 @@
 	<span class="mx-auto"></span>
 	<span>
 		<span class="d-none d-sm-inline">
-			<button mat-button routerLink="/coming-soon">Restaurant</button>
-		    <button mat-button routerLink="/coming-soon">Hunting</button>
-		    <button mat-button routerLink="/coming-soon">Fishing</button>
-		    <button mat-button routerLink="/coming-soon">Lodging</button>
+			<button *ngFor="let n of navItems" mat-button [routerLink]="n[1]">{{n[0]}}</button>
 	    </span>
-
 	</span>
 
 	<button class="d-inline d-sm-none" mat-icon-button [matMenuTriggerFor]="menu">
 		<mat-icon>menu</mat-icon>
 	</button>
 	<mat-menu #menu="matMenu">
-		<button mat-menu-item routerLink="/coming-soon">Restaurant</button>
-		<button mat-menu-item routerLink="/coming-soon">Hunting</button>
-		<button mat-menu-item routerLink="/coming-soon">Fishing</button>
-		<button mat-menu-item routerLink="/coming-soon">Lodging</button>
+		<button *ngFor="let n of navItems" mat-menu-item [routerLink]="n[1]">{{n[0]}}</button>
 	</mat-menu>
 </mat-toolbar>

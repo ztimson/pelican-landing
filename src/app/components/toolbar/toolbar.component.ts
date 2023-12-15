@@ -4,4 +4,11 @@ import {Component} from '@angular/core';
 	selector: 'app-toolbar',
 	templateUrl: './toolbar.component.html'
 })
-export class ToolbarComponent { }
+export class ToolbarComponent {
+	navItems: [string, string][] = [
+		['Restaurant', '/coming-soon'],
+		['Hunting', '/coming-soon'],
+		['Fishing', '/coming-soon'],
+		['Lodging', '/coming-soon'],
+	]
+}
