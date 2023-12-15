@@ -1,14 +1,24 @@
 <mat-toolbar class="d-print-none">
 	<img routerLink="/" class="curs-pointer" src="/assets/logo.png" alt="Logo" height="46px" width="auto">
-	<button mat-button routerLink="/" class="d-flex align-items-center">
-
-		<h1 class="d-none d-sm-inline">Pelican Landing</h1>
-	</button>
+	<button mat-button routerLink="/" class="d-flex align-items-center">Pelican Landing</button>
 	<span class="mx-auto"></span>
 	<span>
-		<button mat-button routerLink="/coming-soon">Restaurant</button>
-	    <button mat-button routerLink="/coming-soon">Hunting</button>
-	    <button mat-button routerLink="/coming-soon">Fishing</button>
-	    <button mat-button routerLink="/coming-soon">Lodging</button>
-    </span>
+		<span class="d-none d-sm-inline">
+			<button mat-button routerLink="/coming-soon">Restaurant</button>
+		    <button mat-button routerLink="/coming-soon">Hunting</button>
+		    <button mat-button routerLink="/coming-soon">Fishing</button>
+		    <button mat-button routerLink="/coming-soon">Lodging</button>
+	    </span>
+
+	</span>
+
+	<button class="d-inline d-sm-none" mat-icon-button [matMenuTriggerFor]="menu">
+		<mat-icon>menu</mat-icon>
+	</button>
+	<mat-menu #menu="matMenu">
+		<button mat-menu-item routerLink="/coming-soon">Restaurant</button>
+		<button mat-menu-item routerLink="/coming-soon">Hunting</button>
+		<button mat-menu-item routerLink="/coming-soon">Fishing</button>
+		<button mat-menu-item routerLink="/coming-soon">Lodging</button>
+	</mat-menu>
 </mat-toolbar>
