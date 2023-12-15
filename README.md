@@ -67,7 +67,7 @@ Website: https://git.zakscode.com
 - [Docker](https://docs.docker.com/install/)
 
 #### Instructions
-1. Run the docker image: `docker run -p 80:80 git.zakscode.com/ztimson/template:latest`
+1. Run the docker image: `docker run -p 80:80 git.zakscode.com/ztimson/pelican-landing:latest`
 2. Open [http://localhost](http://localhost)
 </details>
 
