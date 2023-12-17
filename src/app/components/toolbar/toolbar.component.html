@@ -1,4 +1,4 @@
-<mat-toolbar class="d-print-none">
+<mat-toolbar class="d-print-none text-white" style="background: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; right: 0;">
 	<img routerLink="/" class="curs-pointer" src="/assets/logo.png" alt="Logo" height="46px" width="auto">
 	<button mat-button routerLink="/" class="d-flex align-items-center">Pelican Landing</button>
 	<span class="mx-auto"></span>
@@ -7,7 +7,6 @@
 			<button *ngFor="let n of navItems" mat-button [routerLink]="n[1]">{{n[0]}}</button>
 	    </span>
 	</span>
-
 	<button class="d-inline d-sm-none" mat-icon-button [matMenuTriggerFor]="menu">
 		<mat-icon>menu</mat-icon>
 	</button>

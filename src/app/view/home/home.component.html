@@ -1,36 +1,30 @@
-<div class="w-100">
-	<img src="/assets/background.png" alt="Banner" width="100%" height="400px">
-	<h1></h1>
+<div style="height: min(75vh, 500px); width: 100%; background-size: cover; background: url('/assets/islands.png') no-repeat fixed bottom;">
+	<img src="/assets/sign.jpg" style="width: min(424px, 75%); height: auto; position: absolute; left: 50%; top: min(37.5vh, 250px); transform: translate(-50%, -50%); filter: drop-shadow(10px 10px 15px black)">
 </div>
-<section class="bg-white p-5 text-center cap-width">
-	<h2 class="mb-5">About Us</h2>
-	<p class="mb-5">Pelican Landing is a family run year-round hunting & fishing lodge. It's located on the beautiful southern shores of Lake of Woods and offers the outdoors-man a tailor made experience.  With both road and water access this resort can meet the needs of the angler, hunter, or nature enthusiast. Our goal at Pelican Landing is to make your stay with us a memorable, relaxing experience that you will want to repeat.</p>
-	<app-carousel></app-carousel>
-</section>
-<section class="pt-5 text-center" style="background: #f1f1f1">
+<section class="pt-5 text-center bg-white" style="background: url('/assets/texture.png') repeat;">
 	<h2>Services</h2>
 	<div class="d-flex justify-content-around flex-wrap cap-width py-5">
-		<div class="card p-3 text-center mb-5" style="width: 225px">
+		<div class="card p-3 text-center mb-5 text-white" style="width: 225px; background: url('/assets/spring.png') no-repeat; background-size: cover;">
 			<mat-icon class="mx-auto my-3" style="width: 64px; height: 64px; font-size: 64px">restaurant</mat-icon>
 			<h3>Restaurant</h3>
 			<p class="mb-0">Our on site restaurant is the best around. Open 11am - 8pm</p>
 			<br>
 			<a routerLink="/coming-soon" class="my-2 d-flex align-content-center justify-content-center">Menu <mat-icon>keyboard_double_arrow_right</mat-icon></a>
 		</div>
-		<div class="card p-3 text-center mb-5" style="width: 225px">
+		<div class="card p-3 text-center mb-5 text-white" style="width: 225px; background: url('/assets/fall.png') no-repeat; background-size: cover;">
 			<mat-icon class="mx-auto my-3" style="width: 64px; height: 64px; font-size: 64px">gps_fixed</mat-icon>
 			<h3>Hunting</h3>
 			<p class="mb-0">We offer guided tours to hunt black bear, white tail dear, birds & small game</p>
 			<br>
 			<a routerLink="/coming-soon" class="my-2 d-flex align-content-center justify-content-center">More <mat-icon>keyboard_double_arrow_right</mat-icon></a>
 		</div>
-		<div class="card p-3 text-center mb-5" style="width: 225px">
+		<div class="card p-3 text-center mb-5 text-white" style="width: 225px; background: url('/assets/summer.png') no-repeat; background-size: cover;">
 			<mat-icon class="mx-auto my-3" style="width: 64px; height: 64px; font-size: 64px">phishing</mat-icon>
 			<h3>Fishing</h3>
 			<p class="mb-0">We offer guided tours to fish for walleye, pike, crappie, bass, trout, sturgeon & muskie</p>
 			<a routerLink="/coming-soon" class="my-2 d-flex align-content-center justify-content-center">More <mat-icon>keyboard_double_arrow_right</mat-icon></a>
 		</div>
-		<div class="card p-3 text-center mb-5" style="width: 225px">
+		<div class="card p-3 text-center mb-5 text-white" style="width: 225px; background: url('/assets/winter.png') no-repeat; background-size: cover;">
 			<mat-icon class="mx-auto my-3" style="width: 64px; height: 64px; font-size: 64px">cottage</mat-icon>
 			<h3>Lodging</h3>
 			<p class="mb-0">Reserve a cottage or RV parking spot. Package with a hunting/fishing trip for more savings</p>
@@ -38,12 +32,18 @@
 		</div>
 	</div>
 </section>
-<section class="bg-white p-5 text-center">
+
+<section class="w-100 p-5 text-center cap-width">
+	<h2 class="mb-5">About Us</h2>
+	<p class="mb-5">Pelican Landing is a family run, year-round, hunting & fishing lodge. It's located on the beautiful southern shores of Lake of Woods and offers the outdoorsman a tailor made experience.  With both road and water access this resort can meet the needs of the angler, hunter, or nature enthusiast. Our goal at Pelican Landing is to make your stay with us a memorable & relaxing experience that you will want to repeat.</p>
+	<app-carousel></app-carousel>
+</section>
+<section class="p-5 text-center" style="background: url('/assets/texture.png') repeat;">
 	<h2 class="mb-5">Contact Us</h2>
 	<div class="mx-auto" style="max-width: 750px">
 		<app-contact></app-contact>
 	</div>
 </section>
 <section style="background: #343a40">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20901.5656209322!2d-94.3342870256971!3d49.0924225740941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52bc2793e70efc57%3A0x6f173b50ef0787ba!2sPelican%20Landing!5e0!3m2!1sen!2sca!4v1702654257180!5m2!1sen!2sca" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20901.5656209322!2d-94.3342870256971!3d49.0924225740941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52bc2793e70efc57%3A0x6f173b50ef0787ba!2sPelican%20Landing!5e0!3m2!1sen!2sca!4v1702654257180!5m2!1sen!2sca" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>

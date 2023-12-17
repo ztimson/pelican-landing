@@ -10,7 +10,6 @@ export class CarouselComponent implements OnDestroy, AfterViewInit {
 
 	background = true;
 	gallery: string[] = [
-		'/assets/gallery/sign.jpg',
 		'/assets/gallery/0e2343c77df8a7a889ac415c8e7a7e21.jpg',
 		'/assets/gallery/2a291f871aa431321815427bd0da7b47.jpg',
 		'/assets/gallery/3daf84c720d7cc1a1cee552ed8aaa950.png',
