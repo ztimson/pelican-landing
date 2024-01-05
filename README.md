@@ -46,7 +46,7 @@ Pelican Landing is a family run year-round hunting & fishing lodge. It's located
 
 ### Demo
 
-Website: https://git.zakscode.com
+Website: https://pelica-landing.zakscode.com
 
 ### Built With
 [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular)](https://angular.io/)
