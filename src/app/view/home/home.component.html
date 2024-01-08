@@ -38,27 +38,29 @@
 </section>
 <!-- Restaurant -->
 <section class="py-5 bg-white">
-	<div class="py-5 cap-width d-flex align-items-center justify-content-between">
+	<div class="py-5 cap-width d-flex flex-column flex-wrap flex-md-row align-items-center justify-content-around">
 		<div class="m-5">
 			<img src="/assets/resturant.png" style="width: 200px; height: auto;">
 		</div>
 		<div class="m-5" style="flex: 1 0 0">
 			<h2 class="mb-0">Restaurant</h2>
-			<p class="pe-md-5">Stop in at our restaurant, open 7 days a week, and enjoy our pub food which will make you feel at home. We offer a full menu including appetisers, sandwiches, beverages, hamburgers & hotdogs.</p>
+			<p class="pe-md-5">Stop in at our restaurant, open 7 days a week, and enjoy our pub food which will make you feel at home. We offer a full menu including appetisers, sandwiches, beverages, hamburgers, hot dogs & soft-serve ice cream.</p>
 			<a routerLink="/coming-soon" class="btn btn-outline-dark rounded-pill d-flex align-items-center justify-content-center">
 				Menu <mat-icon>keyboard_double_arrow_right</mat-icon>
 			</a>
 		</div>
 		<div class="m-5">
 			<h3 class="mb-0 text-muted" style="font-size: 1.1rem">Hours:</h3>
+			{{day}}
+			{{day == 1}}
 			<table style="line-height: 1em" class="text-muted">
-				<tr [ngStyle]="{'font-weight-bold': day == 0}"><td>Sunday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 1}"><td>Monday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 2}"><td>Tuesday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 3}"><td>Wednesday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 4}"><td>Thursday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 5}"><td>Friday</td><td>11 am - 8 pm</td></tr>
-				<tr [ngStyle]="{'font-weight-bold': day == 6}"><td>Saturday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 0 ? 'bold' : 'normal'"><td>Sunday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 1 ? 'bold' : 'normal'"><td>Monday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 2 ? 'bold' : 'normal'"><td>Tuesday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 3 ? 'bold' : 'normal'"><td>Wednesday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 4 ? 'bold' : 'normal'"><td>Thursday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 5 ? 'bold' : 'normal'"><td>Friday</td><td>11 am - 8 pm</td></tr>
+				<tr [style.font-weight]="day == 6 ? 'bold' : 'normal'"><td>Saturday</td><td>11 am - 8 pm</td></tr>
 			</table>
 		</div>
 	</div>
