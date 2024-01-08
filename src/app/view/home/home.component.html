@@ -1,12 +1,12 @@
 <!-- Banner -->
 <div style="height: 75vh; width: 100%; background: url('/assets/islands.png') no-repeat fixed bottom; background-size: cover;">
-	<img src="/assets/sign.jpg" style="width: min(424px, 75%); height: auto; position: absolute; left: 50%; top: 37.5vh; transform: translate(-50%, -50%); filter: drop-shadow(10px 10px 15px black)">
+	<img src="/assets/sign.jpg" alt="Logo" style="width: min(424px, 75%); height: auto; position: absolute; left: 50%; top: 37.5vh; transform: translate(-50%, -50%); filter: drop-shadow(10px 10px 15px black)">
 </div>
 <!-- Services -->
 <section class="py-5 bg-white" style="background: url('/assets/texture.png') repeat;">
 	<div class="py-5 cap-width text-center ">
 		<h2 class="mb-5">Services</h2>
-		<div class="d-flex justify-content-around justify-content-lg-between flex-wrap cap-width">
+		<div class="d-flex justify-content-around flex-wrap cap-width">
 			<div class="card p-4 text-center mb-5 text-white" style="width: 250px; background: url('/assets/spring.png') no-repeat; background-size: cover;">
 				<mat-icon class="mx-auto my-3" style="width: 64px; height: 64px; font-size: 64px">restaurant</mat-icon>
 				<h3>Restaurant</h3>
@@ -40,7 +40,7 @@
 <section class="py-5 bg-white">
 	<div class="py-5 cap-width d-flex flex-column flex-wrap flex-md-row align-items-center justify-content-around">
 		<div class="m-5">
-			<img src="/assets/resturant.png" style="width: 200px; height: auto;">
+			<img src="/assets/resturant.png" alt="Restaurant icon" style="width: 200px; height: auto;">
 		</div>
 		<div class="m-5" style="flex: 1 0 0">
 			<h2 class="mb-0">Restaurant</h2>
@@ -51,8 +51,6 @@
 		</div>
 		<div class="m-5">
 			<h3 class="mb-0 text-muted" style="font-size: 1.1rem">Hours:</h3>
-			{{day}}
-			{{day == 1}}
 			<table style="line-height: 1em" class="text-muted">
 				<tr [style.font-weight]="day == 0 ? 'bold' : 'normal'"><td>Sunday</td><td>11 am - 8 pm</td></tr>
 				<tr [style.font-weight]="day == 1 ? 'bold' : 'normal'"><td>Monday</td><td>11 am - 8 pm</td></tr>
@@ -65,49 +63,52 @@
 		</div>
 	</div>
 </section>
-<!-- Resources -->
-<div style="height: 60vh; width: 100%; background: url('/assets/pelican.png') no-repeat fixed center; background-size: cover;">
-
-</div>
+<!-- Divider -->
+<div class="py-5" style="height: 50vh; width: 100%; background: url('/assets/pelican.png') no-repeat fixed center; background-size: cover;"></div>
 <!-- About -->
-<section class="w-100 p-5 text-center cap-width">
-	<h2 class="mb-5">About Us</h2>
-	<p class="mb-5">Pelican Landing is a family run, year-round, hunting & fishing lodge. It's located on the beautiful southern shores of Lake of Woods and offers the outdoorsman a tailor made experience.  With both road and water access this resort can meet the needs of the angler, hunter, or nature enthusiast. Our goal at Pelican Landing is to make your stay with us a memorable & relaxing experience that you will want to repeat.</p>
-	<app-carousel></app-carousel>
+<section class="py-5">
+	<div class="py-5 px-3 cap-width text-center">
+		<h2 class="mb-5">About Us</h2>
+		<p class="mb-4">Pelican Landing is a family run, year-round, hunting & fishing lodge. With local guides to help to you navigate the beautiful southern shores of Lake of Woods you are assured to have a successful hunting or fishing trip. Pelican landing offers a multitude of amenities and packages to give any outdoorsman the perfect tailor made experience.</p>
+		<p class="mb-5">Amenities include: boats, boat-launch, cabins, guides, on-site restaurant & shore-side lunches. With both road and water access this resort can meet the needs of the angler, hunter, or nature enthusiast. Our goal at Pelican Landing is to make your stay with us a memorable & relaxing experience that you will want to repeat.</p>
+		<app-carousel></app-carousel>
+	</div>
 </section>
 <!-- Contact -->
-<section class="p-5 text-center" style="background: url('/assets/texture.png') repeat;">
-	<h2 class="mb-5">Contact Us</h2>
-	<div class="d-flex flex-column-reverse flex-md-row justify-content-center cap-width">
-		<div style="flex: 2 0 0;">
-			<app-contact></app-contact>
-		</div>
-		<div>
-			<div class="d-block d-md-none my-4 border-top border-dark" style="height: 1px; width: 100%;"></div>
-			<div class="d-none d-md-block mx-4 border-end border-dark" style="height: 100%; width: 1px;"></div>
-		</div>
-		<div class="d-flex flex-column text-center text-md-start" style="flex: 1 0 0;">
-			<div class="mb-3">
-				<h3 class="mb-0">Phone</h3>
-				<a href="tel:18074885511" target="_blank">+1 (807) 488-5511</a>
-				<br>
-				<a href="tel:18886908070" target="_blank">+1 (888) 690-8070</a> (Toll Free)
+<section class="py-5" style="background: url('/assets/texture.png') repeat;">
+	<div class="py-5 px-3 cap-width text-center">
+		<h2 class="mb-5">Contact Us</h2>
+		<div class="d-flex flex-column-reverse flex-md-row justify-content-center cap-width">
+			<div style="flex: 2 0 0;">
+				<app-contact></app-contact>
 			</div>
-			<div class="mb-3">
-				<h3 class="mb-0">Email</h3>
-				<a href="mailto:pelicanlanding2002@gmail.com" target="_blank">pelicanlanding2002&#64;gmail.com</a>
+			<div class="px-3">
+				<div class="d-block d-md-none my-5 border-top border-dark" style="height: 1px; width: 100%;"></div>
+				<div class="d-none d-md-block mx-4 border-end border-dark" style="height: 100%; width: 1px;"></div>
 			</div>
-			<div>
-				<h3 class="mb-0">Address</h3>
-				<p>
-					9061 ON-621,<br>
-					Morson, ON POW 1J0,<br>
-					Canada
-				</p>
+			<div class="d-flex flex-column text-center text-md-start" style="flex: 1 0 0;">
+				<div class="mb-3">
+					<h3 class="mb-0">Phone</h3>
+					<a href="tel:18074885511" target="_blank">+1 (807) 488-5511</a>
+					<br>
+					<a href="tel:18886908070" target="_blank">+1 (888) 690-8070</a> (Toll Free)
+				</div>
+				<div class="mb-3">
+					<h3 class="mb-0">Email</h3>
+					<a href="mailto:pelicanlanding2002@gmail.com" target="_blank">pelicanlanding2002&#64;gmail.com</a>
+				</div>
+				<div>
+					<h3 class="mb-0">Address</h3>
+					<p>
+						9061 ON-621,<br>
+						Morson, ON POW 1J0,<br>
+						Canada
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <section style="background: #343a40">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20901.5656209322!2d-94.3342870256971!3d49.0924225740941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52bc2793e70efc57%3A0x6f173b50ef0787ba!2sPelican%20Landing!5e0!3m2!1sen!2sca!4v1702654257180!5m2!1sen!2sca" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20901.5656209322!2d-94.3342870256971!3d49.0924225740941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52bc2793e70efc57%3A0x6f173b50ef0787ba!2sPelican%20Landing!5e0!3m2!1sen!2sca!4v1702654257180!5m2!1sen!2sca" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>

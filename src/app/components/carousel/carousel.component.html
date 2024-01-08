@@ -1,11 +1,10 @@
-<div class="carousel-container"  [style.height]="height">
-	<img *ngIf="background" class="carousel-background" [src]="gallery[index]" alt="background">
+<div class="carousel-container"  [style.height]="height" style="background: #282d31">
 	<img class="carousel-image" [src]="gallery[index]" [alt]="'slide ' + index">
 	<div class="carousel-previous" (click)="previous()">
-		<mat-icon>skip_previous</mat-icon>
+		<mat-icon>keyboard_arrow_left</mat-icon>
 	</div>
 	<div class="carousel-next" (click)="next()">
-		<mat-icon>skip_next</mat-icon>
+		<mat-icon>keyboard_arrow_right</mat-icon>
 	</div>
 	<div class="carousel-pause" (click)="pause = !pause">
 		<mat-icon *ngIf="!pause">pause</mat-icon>

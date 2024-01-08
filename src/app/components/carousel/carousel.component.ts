@@ -40,7 +40,7 @@ export class CarouselComponent implements OnDestroy, AfterViewInit {
 	speed = 5000;
 	pause = false;
 	index = 0 ?? ~~(Math.random() * this.gallery.length);
-	height = '300px';
+	height = '500px';
 
 	ngAfterViewInit() {
 		this.timer = setInterval(() => {
