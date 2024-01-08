@@ -4,4 +4,6 @@ import {Component} from '@angular/core';
 	selector: 'app-contact',
 	templateUrl: './contact.component.html'
 })
-export class ContactComponent { }
+export class ContactComponent {
+	error = false;
+}
